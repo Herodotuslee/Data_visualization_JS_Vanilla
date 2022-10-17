@@ -1,0 +1,41 @@
+body {}
+
+
+
+
+.graph {
+    box-sizing: border-box;
+    width: 700px;
+    height: 500px;
+    border: 0px solid black;
+    border-left-width: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 100px auto 0;
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    position: relative;
+}
+
+/* !!!??? position: relative; */
+.column {
+    height: 20%;
+    background-color: #aaa;
+    flex: 1;
+    position: relative;
+}
+
+/* ???!!!position ,transform */
+.number-label {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 120%);
+}
+
+.y-label {
+    position: absolute;
+    left: 0;
+    transform: translate(-150%, 50%);
+}
